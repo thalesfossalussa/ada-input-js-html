@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Desafio - Cadastro Final</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Desafio Cadastro Final</h1>
+    <h3>Autor: Thales Fossalussa</h3>
+
+    <hr />
+
+    <div class="form-group">
+        <label for="txt-codigo">Código</label>
+        <input type="number" name="txt-codigo" id="txt-codigo">
+    </div>
+    <div class="form-group">
+        <label for="txt-produto">Produto</label>
+        <input type="text" name="txt-produto" id="txt-produto">
+
+    </div>
+    <div class="form-group">
+        <label for="txt-quantidade">Quantidade</label>
+        <input type="number" name="txt-quantidade" id="txt-quantidade">
+
+    </div>
+    <div class="form-group">
+        <label for="txt-preco-unit">Preço unitário</label>
+        <input type="number" name="txt-preco-unit" id="txt-preco-unit">
+
+    </div>
+    <div class="form-group">
+        <button onclick="addProduto()">Cadastrar</button>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Código</td>
+                <td>Produto</td>
+                <td>Quantidade</td>
+                <td>Preço unitário</td>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <tr>
+                <td colspan="4">Não existem dados na tabela</td>
+            </tr>
+        </tbody>
+    </table>
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
